@@ -63,7 +63,7 @@ function Bookingscreen({ match }) {
 
     try {
       setLoading(true);
-      const result = await axios.post("/api/bookings/bookroom", bookingDetails);
+      const result = await axios.post("https://temp-ewqg.onrender.com/api/bookings/bookroom", bookingDetails);
       setLoading(false);
       Swal.fire(
         "Congratulations",

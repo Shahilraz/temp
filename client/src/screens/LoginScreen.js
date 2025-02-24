@@ -21,7 +21,7 @@ function LoginScreen() {
     };
     //console.log(user);
     try {
-      const result = (await axios.post("/api/users/login", user)).data;
+      const result = (await axios.post("https://temp-ewqg.onrender.com/api/users/login", user)).data;
       console.log(result);
       localStorage.setItem("currentUser", JSON.stringify(result));
       window.location.href = "/home";
