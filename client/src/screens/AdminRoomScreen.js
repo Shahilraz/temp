@@ -31,7 +31,7 @@ function AdminRoomScreen() {
     setError("");
     setLoading(true);
     try {
-      const data = (await axios.post("https://temp-ewqg.onrender.com")).data;
+      const data = (await axios.post("https://temp-ewqg.onrender.com/api/rooms/getallrooms")).data;
       setRooms(data);
     } catch (error) {
       console.log(error);

@@ -34,7 +34,7 @@ function AdminAddRoomScreen() {
     setError("");
     setLoading(true);
     try {
-      const data = (await axios.post("https://temp-ewqg.onrender.com", values)).data;
+      const data = (await axios.post("https://temp-ewqg.onrender.com/api/rooms/addroom", values)).data;
       Swal.fire("Congratulations", "Your Room Added Successfully", "success");
       form.resetFields();
     } catch (error) {
