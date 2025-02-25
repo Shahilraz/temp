@@ -18,7 +18,7 @@ function MyBookingScreen() {
     setLoading(true);
     try {
       const data = (
-        await axios.post("https://temp-ewqg.onrender.com/api/bookings/getbookingbyuserid", {
+        await axios.post("/api/bookings/getbookingbyuserid", {
           userid: user._id,
         })
       ).data;

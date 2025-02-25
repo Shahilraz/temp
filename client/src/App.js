@@ -15,7 +15,6 @@ function App() {
     <div className="App">
       <Navbar />
       <BrowserRouter>
-       
         <Route path="/" exact component={Homescreen} />
         <Route
           path="/book/:roomid/:fromdate/:todate"
